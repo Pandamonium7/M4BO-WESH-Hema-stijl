@@ -1,0 +1,74 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0.2rem solid green !important; 
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    font-size: 2rem;
+}
+
+nav{
+    height: 8rem;
+    width: 100%;
+    background-color: #222222;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0,0.2);
+}
+
+.navigation{
+    display: flex;
+    list-style:none;
+    width: 100%;
+    height: 100%;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation__item{
+    padding: 2rem;
+    height: 8rem;
+}
+
+
+.navigation__link{
+    font-size: 3rem;
+    text-decoration: none;
+    color: gainsboro;
+}
+
+.navigation__link:hover{
+    color: slategray;
+}
+
+.active{
+    color: cornflowerblue;
+    border-bottom: 0.5rem solid cornflowerblue;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__img{
+    object-fit: contain;
+    height: calc(100vh - 8rem);
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
