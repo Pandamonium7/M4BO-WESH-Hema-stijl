@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 0.2rem solid green !important; 
+  /*  border: 0.2rem solid green !important; */
 }
 
 html{
@@ -16,19 +16,97 @@ body{
     width: 100%;
     font-size: 2rem;
 }
-
-nav{
-    height: 8rem;
-    width: 100%;
-    background-color: #222222;
-    box-shadow: 0 0 1rem 0 rgba(0,0,0,0.2);
+ul, li{
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
+
+/* Header */
+nav{
+    height: 12rem;
+    width: 100%;
+    background-color: whitesmoke;
+}
+/* ~Header~ */
+
+.topmenu__wrapper{
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    box-shadow: 0 0 0.2rem 0 rgba(0,0,0,0.2);
+}
+
+.topmenu{
+    width: 50%;
+    background: whitesmoke;
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    flex-wrap: wrap;
+
+}
+
+.tmleft{
+    justify-content: flex-start;
+    padding-left: 4rem;
+}
+.tmright{
+    justify-content: end;
+    padding-right: 4rem;
+}
+
+.topmenu__items{
+   height: 4rem;
+   width: 6rem;
+   display: flex;
+   justify-content: center;
+   align-items: end;
+   border-bottom: 0.2rem solid whitesmoke;
+}
+
+.topmenu__items:hover{
+    border-bottom: 0.2rem solid #666666;
+}
+
+.topmenu__link{
+    text-decoration: none;
+    font-size: 75%;
+    color: #333333;
+}
+
+.topmenu__link:hover{
+    color: #666666;
+}
+
+/* MainMenu */
+
+.mainmenu__wrapper, .mainmenu__wrapper > .logo__wrapper, .nav__wrapper, 
+.search__wrapper, .login__wrapper {
+    display: flex;
+    height: 8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mainmenu__wrapper{
+    width: 100%;
+    gap: 10rem;
+    background-color: white;
+}
+
+.logo__img{
+    width: 100%;
+    height: 75%;
+    border-radius: 50%;
+}
+
 
 .navigation{
     display: flex;
     list-style:none;
     width: 100%;
-    height: 100%;
+    height: 75%;
     gap: 4rem;
     justify-content: center;
     align-items: center;
@@ -39,21 +117,22 @@ nav{
     height: 8rem;
 }
 
-
 .navigation__link{
     font-size: 3rem;
     text-decoration: none;
-    color: gainsboro;
+    color: #666666;
 }
 
 .navigation__link:hover{
-    color: slategray;
+    color: #333333;
 }
 
 .active{
     color: cornflowerblue;
     border-bottom: 0.5rem solid cornflowerblue;
 }
+
+/* ~Menu~ */
 
 main{
     display: flex;
@@ -63,7 +142,7 @@ main{
 
 .hero__img{
     object-fit: contain;
-    height: calc(100vh - 8rem);
+    height: calc(100vh - 12rem);
 
 }
 
