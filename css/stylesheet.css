@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  /*  border: 0.2rem solid green !important; */
+    border: 0.2rem solid green !important; 
 }
 
 html{
@@ -25,40 +25,36 @@ ul, li{
 nav{
     height: 12rem;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: white;
 }
 /* ~Header~ */
 
-.topmenu__wrapper{
+.topmenu__wrapper, .topmenu, .topmenu__items{
     height: 4rem;
-    width: 100%;
     display: flex;
-    box-shadow: 0 0 0.2rem 0 rgba(0,0,0,0.2);
+}
+
+.topmenu__wrapper{
+    width: 100%;
+    border-bottom: 0.2rem solid rgba(0,0,0,0.1);
 }
 
 .topmenu{
     width: 50%;
-    background: whitesmoke;
-    display: flex;
+    background: white;
     gap: 3rem;
     list-style: none;
-    flex-wrap: wrap;
-
+    flex-wrap: wrap;    
 }
-
 .tmleft{
-    justify-content: flex-start;
-    padding-left: 4rem;
+    justify-content: center;
 }
 .tmright{
-    justify-content: end;
-    padding-right: 4rem;
+    justify-content: center;
 }
 
 .topmenu__items{
-   height: 4rem;
    width: 6rem;
-   display: flex;
    justify-content: center;
    align-items: end;
    border-bottom: 0.2rem solid whitesmoke;
