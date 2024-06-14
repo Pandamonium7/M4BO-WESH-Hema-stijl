@@ -11,13 +11,13 @@
 <div class="mainmenu__wrapper">
 
     <div class="logo__wrapper">
-        <img class="logo__img" src="img/hero.webp">
+        <img class="logo__img" src="#   ">
     </div>
 
     <div class="nav__wrapper">
-        <ul class="navigation">    
-            <li class="navigation__item"><a class="navigation__link <?= isActive("index");?>" href="index.php">Home</a></li>
-            <li class="navigation__item"><a class="navigation__link <?= isActive("aboutme");?>" href="aboutme.php">Categorieën</a></li>    
+        <ul class="navigation">     
+            <li class="navigation__item"><a class="navigation__link <?= isActive("index");?>" href="index.php">Home</a></li>    
+            <li class="navigation__item"><a class="navigation__link <?= isActive("aboutme");?>" href="aboutme.php">categorieën</a></li>    
         </ul>
     </div>
 

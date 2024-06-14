@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 0.2rem solid green !important; 
+   /* border: 0.2rem solid green !important; */
 }
 
 html{
@@ -10,32 +10,34 @@ html{
     scroll-behavior: smooth;
 }
 
+:root{
+    --background-color: #ffebcd;
+    --font-color: #1a1a1a;
+}
 body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    height: 100%;
+
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: "Oxygen", sans-serif;
+    min-height: 100vh;
     width: 100%;
     font-size: 2rem;
+    font-weight: 400;
 }
-ul, li{
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
+
 
 /* Header */
 nav{
-    height: 12rem;
-    width: 100%;
+    height: 20%;
     background-color: white;
 }
 /* ~Header~ */
 
 .topmenu__wrapper, .topmenu, .topmenu__items{
-    height: 4rem;
     display: flex;
 }
 
 .topmenu__wrapper{
-    width: 100%;
     border-bottom: 0.2rem solid rgba(0,0,0,0.1);
 }
 
@@ -77,32 +79,29 @@ nav{
 /* MainMenu */
 
 .mainmenu__wrapper, .mainmenu__wrapper > .logo__wrapper, .nav__wrapper, 
-.search__wrapper, .login__wrapper {
+.search__wrapper, .login__wrapper{
     display: flex;
-    height: 8rem;
+    height: auto;
     justify-content: center;
     align-items: center;
 }
 
 
-.mainmenu__wrapper{
-    width: 100%;
-    gap: 10rem;
-    background-color: white;
+.topmenu__wrapper, .mainmenu__wrapper {
+    background-color: white;    
+    padding: 0.5rem 0;
 }
 
 .logo__img{
     width: 100%;
-    height: 75%;
-    border-radius: 50%;
+    height: 50%;
 }
-
 
 .navigation{
     display: flex;
     list-style:none;
     width: 100%;
-    height: 75%;
+    height: 100%;
     gap: 4rem;
     justify-content: center;
     align-items: center;
@@ -110,11 +109,10 @@ nav{
 
 .navigation__item{
     padding: 2rem;
-    height: 8rem;
+    height: 6rem;
 }
 
 .navigation__link{
-    font-size: 3rem;
     text-decoration: none;
     color: #666666;
 }
@@ -136,9 +134,18 @@ main{
     align-items: center;
 }
 
-.hero__img{
+.main__heroimg--wrapper{
+    display: flex;
+    width: 80%;
+    height: 100%;
     object-fit: contain;
-    height: calc(100vh - 12rem);
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__img{
+    height: 100%;
+    width: 100%;
 
 }
 
