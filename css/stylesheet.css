@@ -13,14 +13,16 @@ html{
 :root{
     --background-color: #ffebcd;
     --font-color: #1a1a1a;
+    --white: #f1f1f1;
+    --hover-background-color: #f5f5f5;
 }
-body{
 
+body{
     background-color: var(--background-color);
     color: var(--font-color);
     font-family: "Oxygen", sans-serif;
     min-height: 100vh;
-    width: 100%;
+    width: 100vw;
     font-size: 2rem;
     font-weight: 400;
 }
@@ -28,73 +30,145 @@ body{
 
 /* Header */
 nav{
-    height: 20%;
+    height: auto;
     background-color: white;
 }
 /* ~Header~ */
+
+/* Topmenu */
 
 .topmenu__wrapper, .topmenu, .topmenu__items{
     display: flex;
 }
 
 .topmenu__wrapper{
-    border-bottom: 0.2rem solid rgba(0,0,0,0.1);
-}
-
-.topmenu{
-    width: 50%;
-    background: white;
-    gap: 3rem;
-    list-style: none;
-    flex-wrap: wrap;    
-}
-.tmleft{
-    justify-content: center;
-}
-.tmright{
-    justify-content: center;
-}
-
-.topmenu__items{
-   width: 6rem;
-   justify-content: center;
-   align-items: end;
-   border-bottom: 0.2rem solid whitesmoke;
-}
-
-.topmenu__items:hover{
-    border-bottom: 0.2rem solid #666666;
-}
-
-.topmenu__link{
-    text-decoration: none;
-    font-size: 75%;
-    color: #333333;
-}
-
-.topmenu__link:hover{
-    color: #666666;
-}
-
-/* MainMenu */
-
-.mainmenu__wrapper, .mainmenu__wrapper > .logo__wrapper, .nav__wrapper, 
-.search__wrapper, .login__wrapper{
-    display: flex;
-    height: auto;
+    box-shadow: 0 0 0.2rem rgba(0,0,0,0.4);
+    background-color: white;    
+    padding: 0.5rem 0;
+    position: relative;
     justify-content: center;
     align-items: center;
 }
 
-
-.topmenu__wrapper, .mainmenu__wrapper {
-    background-color: white;    
-    padding: 0.5rem 0;
+.topmenu{
+    width: 64rem;
+    background: white;
+    gap: 3rem;
+    list-style: none;
+    flex-wrap: wrap; 
 }
 
+/* Topmenu-left */
+.tmleft{
+    justify-content: flex-start;
+}   
+
+/* Topmenu-right */
+.tmright{
+    justify-content: flex-end;
+}
+
+.topmenu__items{
+   width: auto;
+   justify-content: center;
+   align-items: end;
+   border-bottom: 0.1rem solid var(--white);
+   transition: 0.2s all;
+}
+
+.topmenu__items:hover{
+    border-bottom: 0.1rem solid var(--font-color);
+}
+
+.topmenu__link{
+    text-decoration: none;
+    font-size: 70%;
+    font-weight: 700;
+    color: #000000;
+}
+
+.topmenu__link:hover{
+    color: #333333;
+}
+
+/* Topmenu */
+
+
+
+/* MainMenu */
+
+
+.mainmenu__wrapper, .logo__wrapper, .nav__wrapper, 
+.menubtn__wrapper, .search__wrapper {
+    display: flex;
+    min-height: auto;
+    min-width: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__wrapper{
+    justify-content: center;
+}
+
+.mainmenu__wrapper{
+    max-width: 128rem;
+    background-color: white;
+    padding: 0.5rem 0;
+    gap: 1rem;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+
+.menubtn__wrapper{
+
+}
+
+.menubtn__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menubtn__item{
+    list-style-type: none;
+    height: 4rem;
+}
+
+.menubtn__link{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem 1.5rem;           
+    gap: 0.5rem;
+    border-radius: 0.6rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s all;   
+    cursor: pointer;
+    font-size: 70%;
+    font-weight: 700;
+    color: #333333;
+}
+.menubtn__link:hover{
+    background: var(--hover-background-color);
+}
+
+
+.logo__link{    
+    display: flex;
+    height: 5rem;
+    width: 5rem;
+    justify-content: center;
+    align-items: center;
+}
 .logo__img{
     width: 100%;
-    height: 50%;
+    height: 100%;
+    border-radius: 0.3rem;
 }
 
 .navigation{
@@ -102,14 +176,15 @@ nav{
     list-style:none;
     width: 100%;
     height: 100%;
-    gap: 4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 
 .navigation__item{
-    padding: 2rem;
-    height: 6rem;
+
 }
 
 .navigation__link{
@@ -124,6 +199,38 @@ nav{
 .active{
     color: cornflowerblue;
     border-bottom: 0.5rem solid cornflowerblue;
+}
+
+.search__wrapper{   
+    width: 35%;
+    height: 6rem;
+    position: relative;
+}
+
+.search__bar{
+    border-radius: 2rem;
+    height: 4rem;
+    width: 90%;
+    background: var(--hover-background-color);
+    border: none;
+    text-indent: 2rem;
+}
+
+.search__bar:focus{
+    outline: 0;
+}
+
+
+.search__bar:hover{
+    background: var(--white);
+}
+
+.search-icon{
+    position: absolute;
+    right: 13%;
+}
+
+.favo-icon{
 }
 
 /* ~Menu~ */
@@ -145,7 +252,7 @@ main{
 
 .hero__img{
     height: 100%;
-    width: 100%;
+    width: 70%;
 
 }
 
@@ -153,4 +260,15 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+svg{
+    height: 2rem;
+    width: 2rem;;
+}
+
+
+#user-icon{
+    width: 2.5rem;
+    height: 2.5rem;
 }
