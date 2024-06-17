@@ -93,6 +93,20 @@ nav{
 
 /* Topmenu */
 
+/* SVG and icons */
+
+.svg__icon{
+    height: 2.5rem;
+    width: 2.5rem;;
+    fill: black;
+}
+
+#searchicon{
+    height: 2.1rem;
+    width: 2.1rem;
+}
+
+
 
 
 /* MainMenu */
@@ -118,11 +132,6 @@ nav{
     gap: 1rem;
     margin: 0 auto;
     flex-wrap: wrap;
-}
-
-
-.menubtn__wrapper{
-
 }
 
 .menubtn__list{
@@ -153,7 +162,7 @@ nav{
     font-weight: 700;
     color: #333333;
 }
-.menubtn__link:hover{
+.menubtn__link:hover{   
     background: var(--hover-background-color);
 }
 
@@ -183,9 +192,6 @@ nav{
     gap: 2rem;
 }
 
-.navigation__item{
-
-}
 
 .navigation__link{
     text-decoration: none;
@@ -193,7 +199,7 @@ nav{
 }
 
 .navigation__link:hover{
-    color: #333333;
+    color: #333333; 
 }
 
 .active{
@@ -220,18 +226,15 @@ nav{
     outline: 0;
 }
 
-
 .search__bar:hover{
     background: var(--white);
 }
 
-.search-icon{
+.search--svg{
     position: absolute;
     right: 13%;
 }
 
-.favo-icon{
-}
 
 /* ~Menu~ */
 
@@ -260,15 +263,4 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-svg{
-    height: 2rem;
-    width: 2rem;;
-}
-
-
-#user-icon{
-    width: 2.5rem;
-    height: 2.5rem;
 }

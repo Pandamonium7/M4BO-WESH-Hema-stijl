@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kicks</title>    
+    <title>Kicks Categorieën</title>    
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/logo-kicks.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,9 +30,6 @@
     <?php include("subview/header/header.php");?>
 
     <main>
-        <div class="main__heroimg--wrapper">         
-            <img src="img/shoes-heromain.webp" alt="hero" class="hero__img">
-        <div>
     </main>
 
 <!--    Footer      -->
