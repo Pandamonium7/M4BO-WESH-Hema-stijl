@@ -1,4 +1,5 @@
 <?php
+
  function isActive($name){
     $page = basename($_SERVER["SCRIPT_FILENAME"], '.php');
 
