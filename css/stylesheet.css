@@ -298,7 +298,7 @@ main{
 .hero__sectionwrapper{
     position: absolute;
     width: 35%;
-    height: 60%;
+    height: 50%;
     padding: 4rem;
     display: flex;
     flex-direction: column;
@@ -361,7 +361,7 @@ main{
     max-width: 128rem;
     height: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0 auto;
     flex-wrap: wrap;
     gap: 3rem 1rem;
@@ -369,9 +369,11 @@ main{
 
 
 .offers__wrapper{
-    width: 41rem;
+    max-width: 40rem;
     height: 70rem;
     display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
     flex-direction: column;
     border-radius: 1rem;
     
@@ -472,12 +474,15 @@ footer{
 
 .productpage--main{
     gap: 2.66rem;
+
 }
 
 .product__wrapper{
     width: 30rem;
     height: 50rem;
     display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
     flex-direction: column;
     border-radius: 0.5rem;
     box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.2);
@@ -553,10 +558,6 @@ footer{
         display: none;
     }
 
-    .menubtn__wrapper{
-        padding-right: 0;
-    }
-
     .mainmenu__wrapper {
     box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.4);
     }
@@ -564,18 +565,21 @@ footer{
     .navigation{
         gap: 2rem;
     }
+
     .search__wrapper{
         display: none;
     }
 
-    .hero__sectionwrapper{
-        height: 80%;
+    .main__heroimg--wrapper {
+        width: 100%;
     }
 
+    
+    /*
     .offers__wrapper{
         width: 60rem;
     }
-
+    */
     .productpage--main{
         justify-content: space-evenly;
     }
@@ -584,16 +588,24 @@ footer{
 
 @media screen and (max-width: 76rem){
 
+
+        
     .hero__sectionwrapper{
-        height: 100%;
-        border-radius: 0 1rem 1rem 0;
-    }
-    .offers__sectionwrapper{
-        justify-content: center;
+        height: 90%;
+        width: 40%;
     }
 
-    .offers__wrapper{
-        width: 80rem;
+}   
+
+
+@media screen and (max-width: 37.5rem){
+
+
+        
+    .hero__sectionwrapper{
+        display: none;
     }
-}
+
+}   
+
 /*schrijf me een advertentie in een webshop voor een categorie nieuwe schoenen*/
