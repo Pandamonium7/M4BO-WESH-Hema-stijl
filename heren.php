@@ -50,7 +50,7 @@ if ($connection->connect_error) {
                     <img src="<?php echo $row["product_img"] ?>"alt="<?php echo $row["product_title"]; ?>">
                 </figure>
                 <div class="product__action--wrapper">
-                    <p class="product__section--parag"><?php echo $row["product_title"]; ?></p>
+                    <p class="product__section--titel"><?php echo $row["product_title"]; ?></p>
                     <p><?php echo $row["product_brand"]; ?></p>
 
             
@@ -65,6 +65,45 @@ if ($connection->connect_error) {
                     </div>
                 </div>
         </article>
+       
+        <article class="product__wrapper">
+                <figure class="product__figurewrapper">
+                    <img src="<?php echo $row["product_img"] ?>"alt="<?php echo $row["product_title"]; ?>">
+                </figure>
+                <div class="product__action--wrapper">
+                    <p class="product__section--titel"><?php echo $row["product_title"]; ?></p>
+                    <p><?php echo $row["product_brand"]; ?></p>
+
+
+                    <div class="product__bottom--wrapper">
+                        <h3 class="product__section--prijs"><?php echo "€ ". $row["product_prijs"]; ?></h3>
+                        
+                        <a href="#" class="product__sectionbtn--link">
+                           <img class="svg__icon" src="img/shopping-bag+.svg" alt="winkelwagen"/>
+                        </a>
+                    </div>
+                </div>
+        </article>
+
+        <article class="product__wrapper">
+                <figure class="product__figurewrapper">
+                    <img src="<?php echo $row["product_img"] ?>"alt="<?php echo $row["product_title"]; ?>">
+                </figure>
+                <div class="product__action--wrapper">
+                    <p class="product__section--titel"><?php echo $row["product_title"]; ?></p>
+                    <p><?php echo $row["product_brand"]; ?></p>
+
+
+                    <div class="product__bottom--wrapper">
+                        <h3 class="product__section--prijs"><?php echo "€ ". $row["product_prijs"]; ?></h3>
+                        
+                        <a href="#" class="product__sectionbtn--link">
+                           <img class="svg__icon" src="img/shopping-bag+.svg" alt="winkelwagen"/>
+                        </a>
+                    </div>
+                </div>
+        </article>
+
 
 
         <?php   }

@@ -486,6 +486,7 @@ footer{
 .product__figurewrapper{
     width: 100%;
     height: 60%;
+    background-color: var(--hover-background-color);
 }
 
 .product__figurewrapper img{
@@ -514,30 +515,34 @@ footer{
 
 .product__section--prijs{
     color: var(--font-color);
+    font-weight: 400;
+
 }
 
-.product__section--parag{
-    color: var(--font-color);
-    font-size: 70%;
+.product__section--titel{
+    font-size: 85%;
+    color: var(--font-color);   
 }
 
 .product__sectionbtn--link{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
     color: var(--font-color);
     height: 5rem;
     width: 5rem;
-
-    border-radius: 50%;
+    border-radius: 0.5rem;
     font-size: 100%;
     position: absolute;
-    bottom: 2.5rem;
+    bottom: 1.5rem;
     right: 2.5rem;
     transition: 0.4s all;
     background-color: var(--hema--yellow);
- }   
+ }
+
+ .product__sectionbtn--link:hover{
+    background-color: var(--hover-background-color);
+ }
 
 
 
