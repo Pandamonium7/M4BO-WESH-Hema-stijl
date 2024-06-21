@@ -465,13 +465,13 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:10rem;   
+    gap:3rem;   
 }
 
 /* Product Styling*/
 
 .productpage--main{
-    gap: 5rem;
+    gap: 2.66rem;
 }
 
 .product__wrapper{
@@ -569,6 +569,10 @@ footer{
 
     .offers__wrapper{
         width: 60rem;
+    }
+
+    .productpage--main{
+        justify-content: space-evenly;
     }
 }
 
