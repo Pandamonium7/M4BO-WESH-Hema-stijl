@@ -1,23 +1,8 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KICKS Categorieën</title>    
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <link rel="shortcut icon" type="image/x-icon" href="img/logo-kicks.webp">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-    
-    <script src="script/main.js" defer></script>   
-</head>
-<body>
+<?php include("subview/header/header.php");?>
 
 <!--    Navigatie Menu   -->
-    <?php include("subview/header/header.php");?>
 
+    <h1><?php echo $self; ?></h1>
     <main class="category--main">
         <article class="offers__wrapper">
             <figure class="offers__figurewrapper">
@@ -47,8 +32,10 @@
         </article>
     </main>
 
+
+
 <!--    Footer      -->
+    
     <?php include("subview/footer/footer.php");?>
-</body>
-</html>
+
 

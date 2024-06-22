@@ -12,4 +12,3 @@
         <li class="topmenu__items"><a href="" class="topmenu__link">ipsum</a></li>
     </ul>
 </div>
-

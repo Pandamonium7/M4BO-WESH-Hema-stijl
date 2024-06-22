@@ -1,8 +1,6 @@
 <?php
-
  function isActive($name){
     $page = basename($_SERVER["SCRIPT_FILENAME"], '.php');
-
     if($page == $name){
             return "active";
         }
@@ -18,7 +16,7 @@
     <div class="nav__wrapper">
         <ul class="navigation">     
             <li class="navigation__item"><a class="navigation__link <?= isActive("index");?>" href="index.php">home</a></li>    
-            <li class="navigation__item"><a class="navigation__link <?= isActive("categorieen");?>" href="categorieen.php">categorieën</a></li>    
+            <li class="navigation__item"><a class="navigation__link <?= isActive("categorieën");?>" href="categorieën.php">categorieën</a></li>    
         </ul>
     </div>
 
@@ -45,11 +43,10 @@
             </li>
 
             <li class="menubtn__item item--shopcart">
-                <a class="menubtn__link">
+                <a class="menubtn__link" href="winkelwagen.php">
                    <img class="svg__icon shopcart--svg"  src="img/icon-shoppingbag.svg" alt="shoppingbag-icon">
                 </a>
             </li>
         </ul>
     </div>
 </div>
-

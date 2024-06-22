@@ -273,7 +273,6 @@ nav{
   
 main{
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
     max-width: 128rem;
     margin: 0 auto;
@@ -283,9 +282,7 @@ main{
 
 .main__heroimg--wrapper{
     width: 80%;
-    height: 100%;
     object-fit: contain;
-
 }
 
 .hero__img{
@@ -298,7 +295,7 @@ main{
 .hero__sectionwrapper{
     position: absolute;
     width: 35%;
-    height: 50%;
+        height: 50%;
     padding: 4rem;
     display: flex;
     flex-direction: column;
@@ -549,6 +546,14 @@ footer{
     background-color: var(--hover-background-color);
  }
 
+ h1{
+    max-width: 128rem;
+    display: flex;
+    margin: 0 auto;
+    justify-content: flex-start;
+    padding: 2rem 0;  
+ }
+
 
 
 @media screen and (max-width: 82rem){
@@ -574,12 +579,6 @@ footer{
         width: 100%;
     }
 
-    
-    /*
-    .offers__wrapper{
-        width: 60rem;
-    }
-    */
     .productpage--main{
         justify-content: space-evenly;
     }

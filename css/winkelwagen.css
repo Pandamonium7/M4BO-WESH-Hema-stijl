@@ -1,0 +1,75 @@
+/* Product Styling*/
+
+.productpage--main{
+    gap: 2.66rem;
+
+}
+
+.product__wrapper{
+    width: 50%;
+    height: 30rem;
+    display: flex;
+    background-color: var(--hema--purple);
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.product__figurewrapper{
+    width: 100%;
+    height: 100%;
+    background-color: var(--hover-background-color);
+}
+
+.product__figurewrapper img{
+    border-radius: 1rem 1rem 0 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.product__action--wrapper{
+    width: 40rem;
+    height: 100%;
+    padding: 2.5rem;
+    color: var(--background-color);
+    background-color: var(--hema--yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    position: relative;
+}
+
+
+.product__section--prijs{
+    color: var(--font-color);
+    font-weight: 400;
+
+}
+
+.product__section--titel{
+    font-size: 85%;
+    color: var(--font-color);   
+}
+
+.product__sectionbtn--link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color);
+    height: 5rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+    font-size: 100%;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 2.5rem;
+    transition: 0.4s all;
+    background-color: var(--hema--yellow);
+ }
+
+ .product__sectionbtn--link:hover{
+    background-color: var(--hover-background-color);
+ }

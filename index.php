@@ -1,22 +1,7 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KICKS</title>    
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <link rel="shortcut icon" type="image/x-icon" href="img/logo-kicks.webp">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-    
-    <script src="script/main.js" defer></script>   
-</head>
-<body>
-
+<?php include("subview/header/header.php");?>
 <!--    Navigatie Menu   -->
-    <?php include("subview/header/header.php");?>
+
+<!--    Hero Main        -->
 
     <main>
         <div class="main__heroimg--wrapper">         
@@ -27,14 +12,16 @@
             <h2 class="hero__section--titel">Retro Revival:</h2>
             <p class="hero__section--parag">Klassieke Sneakers voor de Moderne Stap</p>
             <div class=hero__section--btnwrapper>
-                <a href="categorieen.php" class="hero__sectionbtn--link">
+                <a href="#" class="hero__sectionbtn--link">
                     winkel  
                 </a>
             </div>
 
         </section>
     </main>
-    
+
+<!--    CardSections      -->    
+
     <section class="offers__sectionwrapper">
         <h2 class="offers--titel">nu bij KICKS</h2>
 
@@ -77,12 +64,10 @@
                     &#10140;
                 </a>
             </div>
-
         </article>
-
     </section>
+
+
 <!--    Footer      -->
-    <?php include("subview/footer/footer.php");?>
-</body>
-</html>
+<?php include("subview/footer/footer.php");?>
 
