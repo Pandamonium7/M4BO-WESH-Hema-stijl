@@ -8,6 +8,12 @@
     }else{
         $wwagen = "";
     }   
+
+    if($self == "productinfo"){
+        $prinfo = "css/productinfo.css";
+    }else{
+        $prinfo = "";
+    }   
  ?>
 
 <!DOCTYPE html>
@@ -19,6 +25,7 @@
     <title><?php  echo $self; ?></title>    
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="<?php echo $wwagen; ?>">
+    <link rel="stylesheet" href="<?php echo $prinfo; ?>">
     <link rel="shortcut icon" type="image/x-icon" href="img/logo-kicks.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -16,7 +16,8 @@
     <div class="nav__wrapper">
         <ul class="navigation">     
             <li class="navigation__item"><a class="navigation__link <?= isActive("index");?>" href="index.php">home</a></li>    
-            <li class="navigation__item"><a class="navigation__link <?= isActive("categorieën");?>" href="categorieën.php">categorieën</a></li>    
+            <li class="navigation__item"><a class="navigation__link <?= isActive("categorieën");?>" href="categorieën.php">categorieën</a></li>   
+            <li class="navigation__item"><a class="navigation__link <?= isActive("productinfo");?>" href="productinfo.php">productinfo</a></li>  
         </ul>
     </div>
 

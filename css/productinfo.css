@@ -1,0 +1,115 @@
+/* Productinfo Styling*/
+
+.productpage--main{
+
+    height: fit-content;      
+}
+
+.productinfo__wrapper{
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    background-color: var(--background-color);
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+
+
+.productinfo__figurewrapper{
+    width: 60%;
+    height: 100%;
+    background-color: var(--hover-background-color);
+    border-radius: 1rem;
+}
+
+/*
+.productinfo__wrapper:hover .productinfo__figurewrapper{
+    background-color: var(--background-color);
+}
+*/
+
+.productinfo__figurewrapper img{
+    border-radius: 1rem;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+
+.productinfo__text--wrapper{
+    display: flex;
+    padding: 4rem;
+    width: 40%;
+    height: 75%;
+    border-radius: 1rem;
+}
+
+.productinfo__action--wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+    color: var(--font-color);
+    background-color: var(--hover-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    position: relative;
+    border-radius: 1rem;
+}
+
+
+.productinfo__section--prijs{
+    font-weight: 400;
+    color: var(--font-color);
+}
+
+.productinfo__section--titel{
+    font-size: 150%; 
+    color: var(--font-color);
+}
+
+.productinfo__sectionbtn--link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color);
+    height: 6rem;
+    width: 15rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 60%;
+    position: absolute;
+    bottom: 2rem;
+    right: 4rem;
+    transition: 0.4s all;
+
+    background-color: var(--hema--yellow);
+ }
+
+ .productinfo__sectionbtn--link:hover{
+    background-color: var(--background-color);
+ }
+
+ .productinfo__desc--wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: fit-content;
+    width: 60%;
+    padding: 2rem 10rem 4rem 4rem;
+    background-color: var(--hover-background-color);
+    border-radius: 0.5rem;
+    position: relative;
+ }
+
+ @media screen and (max-width: 82rem) {
+    .productpage--main {
+        justify-content: flex-start;
+    }
+}

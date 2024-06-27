@@ -12,13 +12,32 @@
             <h2 class="hero__section--titel">Retro Revival:</h2>
             <p class="hero__section--parag">Klassieke Sneakers voor de Moderne Stap</p>
             <div class=hero__section--btnwrapper>
-                <a href="#" class="hero__sectionbtn--link">
+                <a href="productinfo.php" class="hero__sectionbtn--link">
                     winkel  
                 </a>
             </div>
 
         </section>
     </main>
+
+<!--    Categorie Section -->
+    <section class="offersheader__sectionwrapper">
+        <h2 class="offers--titel">Nu in de Aanbieding</h2>
+
+        <article class="offersheader__wrapper">
+            <div class="offersheader__action--wrapper">
+                <h3 class="offersheader__section--titel">KICKasS Deals</h3>
+                <p class="offersheader__section--parag">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, est provident.</p>
+                <a href="#" class="offersheader__sectionbtn--link">
+                    &#10140;
+                </a>
+
+            </div>
+            <figure class="offersheader__figurewrapper">
+                <img src="img/sale.jpg" alt="">
+            </figure>
+        </article>
+    </section>
 
 <!--    CardSections      -->    
 
