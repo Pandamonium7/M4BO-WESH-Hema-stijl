@@ -2,7 +2,7 @@
 
 <!--    Navigatie Menu   -->
 
-    <h1><?php echo $self; ?></h1>
+
     <main class="category--main">
         <article class="offers__wrapper">
             <figure class="offers__figurewrapper">

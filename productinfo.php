@@ -8,7 +8,7 @@ if ($connection->connect_error) {
     die("Connection failed: " . $connection->connect_error);
   } else {
     
-    $sql = "SELECT * FROM product WHERE product_ID = 1;";
+    $sql = "SELECT * FROM product WHERE product_ID = 4;";
     $result = $connection->query($sql);
 
     if ($result->num_rows > 0) 

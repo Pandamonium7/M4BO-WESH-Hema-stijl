@@ -3,6 +3,11 @@
 .productpage--main{
     gap: 2.66rem;
     flex-direction: column;
+    max-width: 128rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
 }
 
 .product__wrapper{

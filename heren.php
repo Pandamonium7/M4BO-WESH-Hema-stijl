@@ -16,8 +16,6 @@ if ($connection->connect_error) {
 ?>
 
 
-
-
     <?php include("subview/header/header.php");?>
     <!--    Navigatie Menu   -->
 

@@ -100,7 +100,7 @@
   <div class="modal-content">
     <span class="close">×</span>
     <p>Wij gebruiken cookies. Klik op accepteren als het ermee eens bent.</p>
-    <button id="acceptCookies">Accept</button>
+    <button id="acceptCookies">Accepteren</button>
   </div>
     </div>
 
@@ -113,32 +113,25 @@
 
 <script>
 
-// Get the modal
-var modal = document.getElementById("cookieModal");
+let modal = document.getElementById("cookieModal");
+let span = document.getElementsByClassName("close")[0];
+let acceptButton = document.getElementById("acceptCookies");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
 
-// Get the button that accepts cookies
-var acceptButton = document.getElementById("acceptCookies");
-
-// When the user clicks the button, open the modal 
 window.onload = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks the accept button, close the modal and set a cookie
 acceptButton.onclick = function() {
   document.cookie = "acceptedCookies=true; path=/";
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";

@@ -793,10 +793,11 @@ footer{
   
   .modal-content {
     background-color: #fefefe;
-    margin: 15% auto;
+    margin: 70rem auto;
     padding: 2rem;
     border: 0.1rem solid #888;
     width: 80%;
+    
   }
   
   .close {
