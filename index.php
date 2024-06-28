@@ -2,6 +2,17 @@
 <!--    Navigatie Menu   -->
 
 <!--    Hero Main        -->
+    <div id="dialog-container">
+        <dialog id="modal_example1">
+            <span>Wil je naar Nachtmodus overschakelen?</span>
+
+        <div id="dialog-btn-container">
+            <button class="dialog-btn" onclick="modal_test('modal_example1')">Ja</button>
+            <button class="dialog-btn" onclick="modal_test('modal_example1')">Nee</button>
+        </div>
+        </dialog>   
+    </div>
+
 
     <main>
         <div class="main__heroimg--wrapper">         
@@ -85,8 +96,55 @@
             </div>
         </article>
     </section>
+    <div id="cookieModal" class="modal">
+  <div class="modal-content">
+    <span class="close">×</span>
+    <p>Wij gebruiken cookies. Klik op accepteren als het ermee eens bent.</p>
+    <button id="acceptCookies">Accept</button>
+  </div>
+    </div>
+
 
 
 <!--    Footer      -->
 <?php include("subview/footer/footer.php");?>
+
+
+
+<script>
+
+// Get the modal
+var modal = document.getElementById("cookieModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// Get the button that accepts cookies
+var acceptButton = document.getElementById("acceptCookies");
+
+// When the user clicks the button, open the modal 
+window.onload = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks the accept button, close the modal and set a cookie
+acceptButton.onclick = function() {
+  document.cookie = "acceptedCookies=true; path=/";
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
 

@@ -26,18 +26,28 @@ if ($connection->connect_error) {
 
     <!--Merk-->
     <div>
-        <input id="checkbox--adventure" type="checkbox" class="filter">
-        <label for="checkbox--adventure" class="label">Adventure</label>
+        <input id="checkbox--adidas" type="checkbox" class="filter">
+        <label for="checkbox--adidas" class="label">Adidas</label>
     </div>
     <!--In aanbieding-->
     <div>
-        <input id="checkbox--action" type="checkbox" class="filter">
-        <label for="checkbox--action" class="label">Action</label>
+        <input id="checkbox--puma" type="checkbox" class="filter">
+        <label for="checkbox--puma" class="label">Puma</label>
      </div>
     <!--Extra zool-->
     <div>
-        <input id="checkbox--fantasy" type="checkbox" class="filter">
-        <label for="checkbox--fantasy" class="label">Fantasy</label>
+        <input id="checkbox--hoka" type="checkbox" class="filter">
+        <label for="checkbox--hoka" class="label">Hoka</label>
+     </div>
+
+     <div>
+        <input id="checkbox--jordan" type="checkbox" class="filter">
+        <label for="checkbox--jordan" class="label">Jordan</label>
+     </div>
+    <!--Extra zool-->
+    <div>
+        <input id="checkbox--nike" type="checkbox" class="filter">
+        <label for="checkbox--nike" class="label">Nike</label>
      </div>
 
 </section>
@@ -51,7 +61,7 @@ if ($connection->connect_error) {
         //      $row["product_desc"]. $row["product_img"]. $row["product_category"]. $row["product_color"]              
             ?>
      
-        <article class="product__wrapper game">
+        <article data-merk="<?php echo $row["product_brand"]; ?>" class="product__wrapper game">
                 <figure class="product__figurewrapper">
                     <img src="<?php echo $row["product_img"] ?>"alt="<?php echo $row["product_title"]; ?>">
                 </figure>
