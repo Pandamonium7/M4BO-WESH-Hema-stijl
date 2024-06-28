@@ -3,6 +3,7 @@
 const rootElement = document.querySelector(":root");
 const modeSwitch = document.getElementById("node");
 
+
 // Darkmode
 
 modeSwitch.checked = true;
@@ -23,3 +24,6 @@ modeSwitch.onchange = function(){
 
     }
 }
+
+let allGames = document.getElementsByClassName("game");
+console.log(allGames);
