@@ -48,6 +48,9 @@
                    <img class="svg__icon shopcart--svg"  src="img/icon-shoppingbag.svg" alt="shoppingbag-icon">
                 </a>
             </li>
+            <label for="node">
+                <input type="checkbox" name="" id="node" class="dashboardHeader__node">
+            </label>    
         </ul>
     </div>
 </div>

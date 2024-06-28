@@ -27,7 +27,7 @@
         <article class="offersheader__wrapper">
             <div class="offersheader__action--wrapper">
                 <h3 class="offersheader__section--titel">KICKasS Deals</h3>
-                <p class="offersheader__section--parag">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, est provident.</p>
+                <p class="offersheader__section--parag">Haal gigaveel korting bij inschrijving van onze nieuwsletter</p>
                 <a href="#" class="offersheader__sectionbtn--link">
                     &#10140;
                 </a>
